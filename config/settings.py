@@ -1,8 +1,9 @@
 from pathlib import Path
+from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-1-@)ri%vam1^%j@#4-o&e84xwn@3!%dnujt3y=!%g*z8i5*vnb'
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
 
